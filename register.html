@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+
+    <title>LAWANYA mobiles</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css" >
+	<script type="text/javascript">
+	function validate_form(){
+	var valid= true;
+		if (document.registration_form.Fname.value=="")
+			{
+				alert("please fill  first name field!");
+				document.registration_form.Fname.focus();
+				valid= false;
+			}
+		else if(document.registration_form.Lname.value=="")
+			{
+				alert("please fill last name field!");
+				document.registration_form.Lname.focus();
+				valid= false;
+			}
+		else if(document.registration_form.city.value=="")
+			{
+				alert("please fill city field!");
+				document.registration_form.city.focus();
+				valid= false;
+			}
+		else if(document.registration_form.contact.value=="")
+			{
+				alert("please fill contact no field!");
+				document.registration_form.contact.focus();
+				valid= false;
+			}
+		else if(document.registration_form.stno.value=="")
+			{
+				alert("please fill street no field!");
+				document.registration_form.stno.focus();
+				valid= false;
+			}
+		else if(document.registration_form.street.value=="")
+			{
+				alert("please fill street name field!");
+				document.registration_form.street.focus();
+				valid= false;
+			}
+		else if(document.registration_form.district.value=="")
+			{
+				alert("please fill district field!");
+				document.registration_form.district.focus();
+				valid= false;
+			}
+		else if(document.registration_form.email.value=="")
+			{
+				alert("please fill email field!");
+				document.registration_form.email.focus();
+				valid= false;
+			}
+		else if(document.registration_form.password.value=="")
+			{
+				alert("please fill password field!");
+				document.registration_form.password.focus();
+				valid= false;
+			}
+		else if(document.registration_form.cpw.value=="")
+			{
+				alert("please fill confirm password field!");
+				document.registration_form.cpw.focus();
+				valid= false;
+			}
+		return valid;	
+	}
+	</script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="website pics/logo 2.png" class="logo" height="100" alt="" ></a>
+		<div class="form">
+			<input type="text" placeholder="Search for products">
+			<button class="normal">Search</button>
+		</div>
+        <div>
+			
+            <ul id="navbar">               
+                <li id="lg-bag"><a href=""><i class="fas fa-cart-arrow-down"></i></a></li>                 
+				<a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+		<div id="mobile">
+			<a href=""><i class="fas fa-cart-arrow-down"></i></a>
+			<i id="bar" class="fas fa-outdent"></i>	
+	    </div>	
+    </section>	
+	<section id="header2">
+	         <a href="#">Shop by category</a>
+        <div>
+            <ul id="navbar2">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a class="active" href="">Register</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">New Arrivals</a></li>                
+				<a href="#" id="close2"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+		<div id="mobile2">
+			<a href=""><i class="fas fa-cart-arrow-down"></i></a>
+			<i id="bar2" class="fas fa-outdent"></i>	
+	    </div>	
+	
+	</section>
+	<section id="regform" class="section-p1">
+	<div class="container2">
+	<div class="contact-box2">
+		<div class="left2"></div>
+		<div class="right2">
+			<form name="registration_form" method="POST" action="InsertEmp.php" onSubmit="return validate_form(); ">
+	<h4>Create an account</h4>
+	<label>
+	<h5><b> First Name</b></h5></label>
+	<input type="text" name="Fname" class="style" placeholder="Enter your First Name">
+	<br><br>
+	<label>
+	<h5><b> Last Name</b></h5></label>
+	<input type="text" name="Lname" class="style" placeholder="Enter your Last Name">
+	<br><br>
+	<label>
+	<h5><b> City</b></h5></label>
+	<input type="text" name="city" class="style" placeholder="Enter your city">
+	<br><br>
+	<label>
+	<h5><b> Contact Number</b></h5></label>
+	<input type="text" name="contact" class="style" placeholder="Enter your contact number">
+	<br><br>
+    <label>
+	<h5><b> Street No</b></h5></label>
+	<input type="text" name="stno" class="style" placeholder="Enter your street number">
+	<br><br>
+	<label>
+	<h5><b> Street</b></h5></label>
+	<input type="text" name="street" class="style" placeholder="Enter your street name">
+	<br><br>
+	<label>
+	<h5><b> District</b></h5></label>
+	<input type="text" name="district" class="style" placeholder="Enter your district Name">
+	<br><br>
+	<label>
+	<h5><b> E-mail</b></h5></label>
+	<input type="text" name="email" class="style" placeholder="Enter your e-mail">
+	<br><br>
+    <label>
+	<h5><b> Password</b></h5></label>
+	<input type="text" name="password" class="style" placeholder="Enter your password">
+	<br><br>
+	<label>
+	<h5><b> Confirm Password</b></h5></label>
+	<input type="text" name="cpw" class="style" placeholder="confirm your password">
+	<br><br>
+	<input type="reset" name="clear" class="btn" value="clear">
+	<br><br>
+	<input type="submit" name="submit" class="btn" value="Register">
+	
+	</form>
+	</div>
+	</div>	
+	</div>
+</section>
+	<footer class="section-p1">
+		<div class="col">
+			<img src="website pics/website logo 3.png" class="logo " height="100" alt="" >
+			
+		<h4>About</h4>
+		<a href="#">About us</a>
+		<a href="#">Privacy policy</a>
+		<a href="#">Contact us</a>
+		<a href="#">About us</a>
+	</div>
+		<div class="col">
+		<h4>Find it fast</h4>
+		<a href="#">Home</a>
+		<a href="#">Login</a>
+		<a href="#">Register</a>
+		<a href="#">About us</a>
+		<a href="#">New arrivals</a>
+	</div>
+		<div class="col">
+			<h4>Contact</h4>
+			<p><strong>Address:</strong>23,Colombo road, ratnapura</p>
+			<p><strong>Phone:</strong>+90909009</p>
+			<p><strong>Hours:</strong>10.00-18.00,Mon-Sat</p>
+			
+		</div>
+		<div class="col">
+		<div class="follow">
+				<h4>Follow us</h4>
+				<div class="icon">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instergram"></i>
+					<i class="fab fa-pinterest-p"></i>
+					<i class="fab fa-youtube"></i>
+				</div>
+			</div>
+	
+		</div>
+	
+		<div class="copyright">
+			<p>2023 <strong>Lawanya Mobiles </strong>all rights reserved</p>
+		
+		</div>
+	</footer>
+	
+    <script src="script.js"></script>
+	
+	
+	
+	
+</body>
+</html>
